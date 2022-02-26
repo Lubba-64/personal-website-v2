@@ -1,0 +1,44 @@
+:root {
+  --header-inner-content-size: 50px;
+  --header-inner-content-padding: calc(var(--header-inner-content-size) / 4);
+  --header-content-border-radius: calc(var(--header-inner-content-size) / 10);
+}
+
+.__main_page_header__ {
+  background-color: var(--orange);
+  padding: 10px;
+}
+.__header_button__ {
+  width: max-content;
+  height: fit-content;
+  border: var(--header-content-border-radius) solid var(--grey-mid);
+  border-radius: 10px;
+  background-color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+  padding: var(--header-inner-content-padding);
+  &:active {
+    background-color: var(--grey-mid);
+  }
+}
+/* 
+ for some reason the Teko 
+ google font has some weird spacing
+ so I have to do that weird margin. 
+ looks good in the final product tho 
+*/
+.__header_text__ {
+  color: var(--orange-light);
+  font-family: "Teko";
+  font-size: var(--header-inner-content-size);
+  margin: -10px var(--header-inner-content-padding) -15px 0;
+}
+.__header_icon__ {
+  width: var(--header-inner-content-size);
+  height: var(--header-inner-content-size);
+}
+.__header_button_container__ {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}

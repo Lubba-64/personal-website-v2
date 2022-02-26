@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+
+/*Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+
+/*Vars*/
+:root {
+  --dark: #305254;
+  --light: #c7eaec;
+  --grey-dark: #262c36;
+  --grey-mid: #4c5159;
+  --grey-light: #9298a1;
+  --orange: #ff8657;
+  --orange-light: #ffa785;
+  --orange-dark: #d46a00;
+}
+
+/*Main Page Style*/
+.__root__ {
+  background-color: var(--grey-dark);
+  margin: 0;
+  padding: 0;
+}
+.__body__ {
+  background-color: var(--grey-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/*text Classes*/
+.__h2__ {
+  color: var(--orange);
+  font-family: "Teko";
+  margin-left: 10px;
+}
+.__paragraph_text__ {
+  color: var(--orange-light);
+  font-family: "Teko";
+  font-size: 15px;
+  background: none;
+}
+.__link_text__ {
+  color: var(--orange-light);
+  background: none;
+  font-family: "Teko";
+  font-size: 15px;
+  &:visited {
+    color: var(--orange-dark);
+    background: none;
+  }
+}
+
+/*Div Classes*/
+.__content_bar__ {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  background-color: var(--grey-mid);
+  border-radius: 10px;
+}
