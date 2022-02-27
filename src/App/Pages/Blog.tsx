@@ -1,8 +1,9 @@
 import React from "react";
 import { Page } from "../Page";
+import "../../index.scss";
 
 export const Blog = () => {
-  return <div>coming soon!</div>;
+  return <p>coming soon!</p>;
 };
 export const BlogPage: Page = {
   name: "Blog",

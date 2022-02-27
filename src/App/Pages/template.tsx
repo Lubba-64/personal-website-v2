@@ -1,9 +1,10 @@
 /**
- * copy this into a new .tsx file to get started!
+ * copy this into a new .tsx file in the pages directory to get started!
  */
 
 import React from "react";
 import { Page } from "../Page";
+import "../../index.scss";
 /** this is the page's content, what gets displayed below the header */
 export const Template = () => {
   return <p>template page...</p>;
