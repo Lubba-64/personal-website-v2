@@ -1,5 +1,5 @@
-export interface Page {
-  pageName: string;
+export interface HeaderContent {
+  name: string;
   icon?: string;
   jsx?: () => JSX.Element;
   link?: string;

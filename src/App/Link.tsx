@@ -9,9 +9,27 @@ export function lnk_open_tgt_none(url: string) {
   if (_window !== null) _window.opener = null;
 }
 
+type targets = "blank" | "none";
+
+export function lnk_open(url: string, target?: targets) {
+  if (url.includes("mailto:")) {
+    window.location.href = url;
+    return;
+  }
+  if (target !== undefined) {
+    if (target === "blank") {
+      lnk_open_tgt_blnk(url);
+    } else if (target === "none") {
+      lnk_open_tgt_none(url);
+    }
+    return;
+  }
+  lnk_open_tgt_none(url);
+}
+
 interface Props {
   location: string;
-  target: "blank" | "none";
+  target: targets;
   text: string;
 }
 
