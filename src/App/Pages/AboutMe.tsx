@@ -2,6 +2,7 @@ import React from "react";
 import { ContentPanel } from "../Components/ContentPanel";
 import "../../index.scss";
 import { employed_at } from "../Constants";
+import { Page } from "../Page";
 
 export const AboutMe = () => {
   return (
@@ -31,3 +32,11 @@ export const AboutMe = () => {
     </div>
   );
 };
+
+export const AboutMePage: Page = {
+  name: "About Me",
+  jsx: AboutMe,
+  route: "/AboutMe",
+  isHeaderPage: true,
+};
+export default AboutMePage;

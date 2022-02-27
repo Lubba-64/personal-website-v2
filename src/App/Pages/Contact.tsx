@@ -1,6 +1,7 @@
 import React from "react";
 import "../../index.scss";
 import { ContentPanel } from "../Components/ContentPanel";
+import { Page } from "../Page";
 
 export const Contact = () => {
   return (
@@ -20,3 +21,10 @@ export const Contact = () => {
     </div>
   );
 };
+export const ContactPage: Page = {
+  name: "Contact",
+  jsx: Contact,
+  route: "/Contact",
+  isHeaderPage: true,
+};
+export default ContactPage;

@@ -3,6 +3,7 @@ import "../../index.scss";
 import { whatIKnow } from "../Constants";
 import { ContentPanel } from "../Components/ContentPanel";
 import { Link } from "../Components/Link";
+import { Page } from "../Page";
 
 export const Accomlishments = () => {
   return (
@@ -73,3 +74,11 @@ export const Accomlishments = () => {
     </div>
   );
 };
+
+export const AccomplishmentsPage: Page = {
+  name: "Accomplishments",
+  jsx: Accomlishments,
+  route: "/Accomplishments",
+  isHeaderPage: true,
+};
+export default AccomplishmentsPage;

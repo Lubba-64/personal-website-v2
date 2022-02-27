@@ -18,7 +18,10 @@ export const PageMaker = (props: Props) => {
                 path={page.route}
                 element={
                   page.jsx !== undefined ? (
-                    <Header key={page.name} pages={props.pages}>
+                    <Header
+                      key={page.name}
+                      pages={props.pages.filter((page) => page.isHeaderPage)}
+                    >
                       {page.jsx()}
                     </Header>
                   ) : (

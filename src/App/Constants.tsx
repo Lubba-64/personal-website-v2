@@ -24,5 +24,5 @@ export const whatIKnow = [
   { name: "Frameworks", items: knownFrameworks },
   { name: "Formats", items: knownFormats },
 ];
-
+// other info
 export const currentOS = "Windows 10";

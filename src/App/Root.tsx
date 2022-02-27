@@ -1,7 +1,7 @@
 import React from "react";
 import { PageMaker } from "./Components/PageMaker";
-import mainPages from "./Pages";
+import pages from "./Pages";
 
 export const AppRoot = () => {
-  return <PageMaker pages={mainPages} />;
+  return <PageMaker pages={pages} />;
 };

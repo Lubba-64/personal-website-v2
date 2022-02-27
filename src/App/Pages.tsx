@@ -1,25 +1,27 @@
-import { AboutMe } from "./Pages/AboutMe";
-import { Accomlishments } from "./Pages/Accomplishments";
-import { Blog } from "./Pages/Blog";
-import { Contact } from "./Pages/Contact";
-import { Home } from "./Pages/Home";
+import AboutMePage from "./Pages/AboutMe";
+import AccomplishmentsPage from "./Pages/Accomplishments";
+import BlogPage from "./Pages/Blog";
+import ContactPage from "./Pages/Contact";
+import HomePage from "./Pages/Home";
 import { Page } from "./Page";
 
-export const mainPages: Page[] = [
-  { name: "Home", jsx: Home, route: "/" },
-  { name: "Accomplishments", jsx: Accomlishments, route: "/Accomplishments" },
-  { name: "About Me", jsx: AboutMe, route: "/AboutMe" },
-  { name: "Contact", jsx: Contact, route: "/Contact" },
-  { name: "Blog", jsx: Blog, route: "/Blog" },
+export const pages: Page[] = [
+  HomePage,
+  AboutMePage,
+  AccomplishmentsPage,
+  BlogPage,
+  ContactPage,
   {
     name: "Github",
     icon: "Icons/github.png",
     link: "https://github.com/Lubba-64",
+    isHeaderPage: true,
   },
   {
     name: "Youtube",
     icon: "Icons/youtube.png",
     link: "https://www.youtube.com/channel/UCC6frUe5JkHnIum5V-20I1w",
+    isHeaderPage: true,
   },
 ];
-export default mainPages;
+export default pages;

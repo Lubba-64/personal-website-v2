@@ -3,6 +3,7 @@ import "../../index.scss";
 import { employed_at, days_employed } from "../Constants";
 import { ContentPanel } from "../Components/ContentPanel";
 import { Link } from "../Components/Link";
+import { Page } from "../Page";
 export const Home = () => {
   return (
     <ContentPanel title="Benjamin Hines">
@@ -27,3 +28,10 @@ export const Home = () => {
     </ContentPanel>
   );
 };
+export const HomePage: Page = {
+  name: "Home",
+  jsx: Home,
+  route: "/",
+  isHeaderPage: true,
+};
+export default HomePage;

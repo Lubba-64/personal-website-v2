@@ -1,7 +1,8 @@
 export interface Page {
-  name: string;
+  name?: string;
   icon?: string;
   jsx?: () => JSX.Element;
   link?: string;
   route?: string;
+  isHeaderPage?: boolean;
 }
