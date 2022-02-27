@@ -1,4 +1,4 @@
-.__src__ {
+.__link__ {
   color: var(--orange-light);
   background: none;
   font-family: "Teko";
@@ -15,5 +15,5 @@ a:visited,
 a:focus,
 a:hover,
 a:active {
-  @extend .__src__;
+  @extend .__link__;
 }

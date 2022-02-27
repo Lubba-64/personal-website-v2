@@ -33,13 +33,15 @@ export function lnk_open(url: string, target?: HTMLAttributeAnchorTarget) {
 
 interface Props {
   location: string;
-  target: HTMLAttributeAnchorTarget;
+  target?: HTMLAttributeAnchorTarget;
   children: string;
 }
 
 export const Link = (props: Props) => {
+  let target: HTMLAttributeAnchorTarget =
+    props.target === undefined ? "_blank" : props.target;
   return (
-    <a href={props.location} target="" rel="noopener noreferrer">
+    <a href={props.location} target={target} rel="noopener noreferrer">
       {props.children}
     </a>
   );

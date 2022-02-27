@@ -19,7 +19,9 @@ export const Header = (props: Props) => {
               className="__header_button__"
               key={page.name}
               onClick={() => {
-                if (page.jsx !== undefined) setCurrentPage(page);
+                if (page.jsx !== undefined && page !== currentPage)
+                  setCurrentPage(page);
+
                 if (props.onClick !== undefined) props.onClick(page);
               }}
             >
