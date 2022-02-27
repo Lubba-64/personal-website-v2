@@ -1,5 +1,6 @@
 export interface Page {
   pageName: string;
   icon?: string;
-  jsx: () => JSX.Element;
+  jsx?: () => JSX.Element;
+  link?: string;
 }

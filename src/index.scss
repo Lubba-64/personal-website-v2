@@ -28,18 +28,18 @@
 }
 
 /*text Classes*/
-.__h2__ {
-  color: var(--orange);
+.__title__ {
+  color: var(--orange-dark);
   font-family: "Teko";
-  margin-left: 10px;
+  margin: 0 0 -10px 0;
 }
-.__paragraph_text__ {
+.__p__ {
   color: var(--orange-light);
   font-family: "Teko";
   font-size: 15px;
   background: none;
 }
-.__link_text__ {
+.__src__ {
   color: var(--orange-light);
   background: none;
   font-family: "Teko";
@@ -54,9 +54,10 @@
 .__content_bar__ {
   margin: 0 auto;
   margin-bottom: 10px;
-  width: 100%;
+  width: 90%;
   height: max-content;
   padding: 10px;
+  margin: 20px;
   background-color: var(--grey-mid);
   border-radius: 10px;
 }
