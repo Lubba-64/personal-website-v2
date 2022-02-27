@@ -27,37 +27,36 @@
   padding: 0;
 }
 
+body {
+  @extend .__body__;
+}
+
 /*text Classes*/
 .__title__ {
-  color: var(--orange-dark);
+  color: var(--orange);
   font-family: "Teko";
   margin: 0 0 -10px 0;
 }
-.__p__ {
+h2 {
+  @extend .__title__;
+}
+.__paragraph__ {
   color: var(--orange-light);
   font-family: "Teko";
   font-size: 15px;
   background: none;
 }
-.__src__ {
-  color: var(--orange-light);
-  background: none;
-  font-family: "Teko";
-  font-size: 15px;
-  &:visited {
-    color: var(--orange-dark);
-    background: none;
-  }
+p {
+  @extend .__paragraph__;
 }
-
-/*Div Classes*/
-.__content_bar__ {
-  margin: 0 auto;
-  margin-bottom: 10px;
-  width: 90%;
-  height: max-content;
-  padding: 10px;
-  margin: 20px;
-  background-color: var(--grey-mid);
-  border-radius: 10px;
+ul {
+  @extend .__paragraph__;
+}
+.__bold__ {
+  background-color: var(--grey-dark);
+  color: var(--orange-dark);
+  font-weight: bold;
+}
+b {
+  @extend .__bold__;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutMe } from "./AboutMe";
+import { Contact } from "./Contact";
 import { Header } from "./Header";
 import { Home } from "./Home";
 import { lnk_open } from "./Link";
@@ -8,6 +9,7 @@ import { HeaderContent } from "./Page";
 const pages: HeaderContent[] = [
   { name: "Home", jsx: Home },
   { name: "About Me", jsx: AboutMe },
+  { name: "Contact", jsx: Contact },
   {
     name: "Github",
     icon: "Icons/github.png",

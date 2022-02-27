@@ -1,0 +1,19 @@
+.__src__ {
+  color: var(--orange-light);
+  background: none;
+  font-family: "Teko";
+  font-size: 15px;
+  &:visited {
+    color: var(--orange-dark);
+    background: none;
+  }
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  @extend .__src__;
+}
