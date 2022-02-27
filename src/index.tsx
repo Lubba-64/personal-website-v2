@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import { AppRoot } from "./App/Root";
 import reportWebVitals from "./reportWebVitals";
+
 ReactDOM.render(
   <React.StrictMode>
     <AppRoot />

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import { HeaderContent } from "../Page";
+import { Page } from "../Page";
 import "./Header.scss";
 import "../../index.scss";
+import { useNavigate } from "react-router-dom";
+import { lnk_open } from "./Link";
 
 interface Props {
-  pages: HeaderContent[];
-  onClick?: (page: HeaderContent) => void;
+  pages: Page[];
+  children: React.ReactNode;
 }
 
 export const Header = (props: Props) => {
-  const [currentPage, setCurrentPage] = useState<HeaderContent>(props.pages[0]);
+  const nav = useNavigate();
   return (
     <div>
       <div className="__header_outline__">
@@ -19,10 +21,8 @@ export const Header = (props: Props) => {
               className="__header_button__"
               key={page.name}
               onClick={() => {
-                if (page.jsx !== undefined && page !== currentPage)
-                  setCurrentPage(page);
-
-                if (props.onClick !== undefined) props.onClick(page);
+                if (page.route !== undefined) nav(page.route);
+                if (page.link !== undefined) lnk_open(page.link);
               }}
             >
               <h2 className="__header_text__">{page.name}</h2>
@@ -36,7 +36,7 @@ export const Header = (props: Props) => {
         </div>
       </div>
 
-      {currentPage.jsx === undefined ? <div /> : currentPage.jsx()}
+      {props.children}
     </div>
   );
 };
