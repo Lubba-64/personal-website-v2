@@ -1,8 +1,8 @@
 import React from "react";
-import "../index.scss";
-import { employed_at, days_employed } from "./Constants";
-import { ContentPanel } from "./ContentPanel";
-import { Link } from "./Link";
+import "../../index.scss";
+import { employed_at, days_employed } from "../Constants";
+import { ContentPanel } from "../Components/ContentPanel";
+import { Link } from "../Components/Link";
 export const Home = () => {
   return (
     <div>

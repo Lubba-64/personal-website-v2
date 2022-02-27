@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { HeaderContent } from "./Page";
+import { HeaderContent } from "../Page";
 import "./Header.scss";
-import "../index.scss";
+import "../../index.scss";
 
 interface Props {
   pages: HeaderContent[];

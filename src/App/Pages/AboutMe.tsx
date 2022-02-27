@@ -1,7 +1,7 @@
 import React from "react";
-import { ContentPanel } from "./ContentPanel";
-import "../index.scss";
-import { employed_at } from "./Constants";
+import { ContentPanel } from "../Components/ContentPanel";
+import "../../index.scss";
+import { employed_at } from "../Constants";
 
 export const AboutMe = () => {
   return (

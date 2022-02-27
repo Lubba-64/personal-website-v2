@@ -1,6 +1,6 @@
 import React, { HTMLAttributeAnchorTarget } from "react";
 import "./Link.scss";
-import "../index.scss";
+import "../../index.scss";
 
 export function lnk_open_tgt_blnk(url: string) {
   let _window = window.open(url, "_blank", "noopener noreferrer");

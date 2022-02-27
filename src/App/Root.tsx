@@ -1,36 +1,14 @@
 import React from "react";
-import { AboutMe } from "./AboutMe";
-import { Accomlishments } from "./Accomplishments";
-import { Blog } from "./Blog";
-import { Contact } from "./Contact";
-import { Header } from "./Header";
-import { Home } from "./Home";
-import { lnk_open } from "./Link";
+import { mainPages } from "../Pages";
+import { Header } from "./Components/Header";
+import { lnk_open } from "./Components/Link";
 import { HeaderContent } from "./Page";
-
-const pages: HeaderContent[] = [
-  { name: "Home", jsx: Home },
-  { name: "Accomplishments", jsx: Accomlishments },
-  { name: "About Me", jsx: AboutMe },
-  { name: "Contact", jsx: Contact },
-  { name: "Blog", jsx: Blog },
-  {
-    name: "Github",
-    icon: "Icons/github.png",
-    link: "https://github.com/Lubba-64",
-  },
-  {
-    name: "Youtube",
-    icon: "Icons/youtube.png",
-    link: "https://www.youtube.com/channel/UCC6frUe5JkHnIum5V-20I1w",
-  },
-];
 
 export const AppRoot = () => {
   return (
     <div>
       <Header
-        pages={pages}
+        pages={mainPages}
         onClick={(page: HeaderContent) => {
           if (page.link !== undefined) {
             lnk_open(page.link);

@@ -1,6 +1,6 @@
 import React from "react";
-import "../index.scss";
-import { ContentPanel } from "./ContentPanel";
+import "../../index.scss";
+import { ContentPanel } from "../Components/ContentPanel";
 
 export const Contact = () => {
   return (
