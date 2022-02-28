@@ -1,5 +1,3 @@
-# WIP....
+git repo for my personal website
 
-- no hosting location (not going to be a github page)
-- this is going to be a copy with some improvements and some web toys to my previous website
-- also its in react typescript so its not hot garbage....
+hosted here: https://lubba64.com/
