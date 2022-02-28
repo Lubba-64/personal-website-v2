@@ -7,7 +7,7 @@ import { Page } from "../Page";
 
 export const Accomlishments = () => {
   return (
-    <div>
+    <div className="__page_root__">
       <ContentPanel title="Programming stuff I know">
         <ul>
           {whatIKnow.map((category) => (

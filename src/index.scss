@@ -13,6 +13,9 @@
   --orange: #ff8657;
   --orange-light: #ffa785;
   --orange-dark: #d46a00;
+  --text-size-0: 3vh;
+  --text-size-1: 7vh;
+  --ul-padding: 2vh;
 }
 
 /*Main Page Style*/
@@ -35,7 +38,7 @@ body {
 .__title__ {
   color: var(--orange);
   font-family: "Teko";
-  margin: 0 0 -10px 0;
+  font-size: var(--text-size-1);
 }
 h2 {
   @extend .__title__;
@@ -43,7 +46,7 @@ h2 {
 .__paragraph__ {
   color: var(--orange-light);
   font-family: "Teko";
-  font-size: 15px;
+  font-size: var(--text-size-0);
   background: none;
 }
 p {
@@ -59,4 +62,13 @@ ul {
 }
 b {
   @extend .__bold__;
+}
+.__page_root__ {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ul {
+  margin-left: var(--ul-padding);
+  padding-left: var(--ul-padding);
 }

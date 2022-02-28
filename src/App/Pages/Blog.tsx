@@ -3,7 +3,11 @@ import { Page } from "../Page";
 import "../../index.scss";
 
 export const Blog = () => {
-  return <p>coming soon!</p>;
+  return (
+    <div className="__page_root__">
+      <p>coming soon!</p>
+    </div>
+  );
 };
 export const BlogPage: Page = {
   name: "Blog",

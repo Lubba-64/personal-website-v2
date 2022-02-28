@@ -6,7 +6,7 @@ import { Page } from "../Page";
 
 export const AboutMe = () => {
   return (
-    <div>
+    <div className="__page_root__">
       <ContentPanel title="About Myself">
         <p>In terms of things about myself I think the big points are these</p>
         <ul>

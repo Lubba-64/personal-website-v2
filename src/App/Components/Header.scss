@@ -1,18 +1,24 @@
 :root {
-  --header-inner-content-size: 50px;
-  --header-inner-content-padding: calc(var(--header-inner-content-size) / 4);
-  --header-content-border-radius: calc(var(--header-inner-content-size) / 10);
-  --header-height: calc(var(--header-inner-content-size) * 1.3);
+  --total-header-height: 15vh;
+  --header-contents-height: 13vh;
+  --header-border-width: calc(
+    var(--total-header-height) - var(--header-contents-height)
+  );
+  --header-button-border-width: 1vh;
+  --header-button-contents-size: 7vh;
+  --header-button-height: 3vh;
+  --header-button-padding: 1vh;
+  --header-font-size: 5vh;
 }
 
 .__header_outline__ {
   background-color: var(--orange);
-  padding: 10px;
+  padding: var(--header-border-width);
 }
 
 .__header_button_container__ {
   background-color: var(--grey-dark);
-  height: var(--header-height);
+  height: var(--header-contents-height);
   display: flex;
   justify-content: left;
   align-items: center;
@@ -25,34 +31,30 @@
 }
 
 .__header_button__ {
-  width: fit-content;
-  border: var(--header-content-border-radius) solid var(--grey-mid);
-  border-radius: 10px;
+  border: var(--header-button-border-width) solid var(--grey-mid);
+  border-radius: var(--header-button-border-width);
   background-color: var(--dark-grey);
   display: flex;
   align-items: center;
-  padding: var(--header-inner-content-padding);
+  padding: 0 var(--header-button-padding) 0 var(--header-button-padding);
+  width: fit-content;
   &:active {
     background-color: var(--grey-mid);
   }
 }
-/* 
- for some reason the Teko 
- google font has some weird spacing
- so I have to do that weird margin. 
- looks good in the final product tho 
-*/
+
 .__header_text__ {
   color: var(--orange-light);
   font-family: "Teko";
-  font-size: 200%;
+  font-size: var(--header-font-size);
+  margin-top: calc(var(--header-font-size) / 2);
+  margin-bottom: 0vh;
   white-space: nowrap;
-  margin-top: -20px;
 }
 
 .__header_icon__ {
-  height: 200%;
+  height: var(--header-button-contents-size);
   &:nth-child(2) {
-    margin-left: var(--header-inner-content-padding);
+    margin-left: var(--header-button-padding);
   }
 }

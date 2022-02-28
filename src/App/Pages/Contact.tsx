@@ -5,7 +5,7 @@ import { Page } from "../Page";
 
 export const Contact = () => {
   return (
-    <div>
+    <div className="__page_root__">
       <ContentPanel title="Contact">
         <p>
           Contacting me is as easy as sending me an email, which is my perferred

@@ -31,6 +31,12 @@ export const PageMaker = (props: Props) => {
               />
             );
           })}
+        <Route
+          path="*"
+          element={
+            <p style={{ marginLeft: "30px" }}>404 error! Page not found!</p>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
