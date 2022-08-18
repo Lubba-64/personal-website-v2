@@ -1,6 +1,5 @@
 import AboutMePage from "./Pages/AboutMe";
 import AccomplishmentsPage from "./Pages/Accomplishments";
-import BlogPage from "./Pages/Blog";
 import ContactPage from "./Pages/Contact";
 import HomePage from "./Pages/Home";
 import { Page } from "./Page";
@@ -9,7 +8,6 @@ export const pages: Page[] = [
   HomePage,
   AboutMePage,
   AccomplishmentsPage,
-  BlogPage,
   ContactPage,
   {
     name: "Github",

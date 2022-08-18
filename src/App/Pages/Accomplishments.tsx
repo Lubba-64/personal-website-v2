@@ -14,7 +14,7 @@ export const Accomlishments = () => {
             <li key={category.name}>
               {category.name}
               {" --> "}
-              {category.items.map((item) => item + ", ")}
+              {category.items.join(", ")}
             </li>
           ))}
         </ul>
@@ -61,16 +61,12 @@ export const Accomlishments = () => {
             </Link>
           </li>
           <li>
-            <Link location="https://github.com/SoulShardStudos">
+            <Link location="https://github.com/SoulShardStudios">
               my studio's github
             </Link>
           </li>
         </ul>
       </ContentPanel>
-      <p style={{ marginLeft: "10px" }}>
-        Oh yeah I also got employed, which I would consider an accomplishment in
-        today's economy, haha.
-      </p>
     </div>
   );
 };

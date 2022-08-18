@@ -3,7 +3,7 @@ import { Page } from "../Page";
 import "./Header.scss";
 import "../../index.scss";
 import { useNavigate } from "react-router-dom";
-import { lnk_open } from "./Link";
+import { open_link } from "./Link";
 
 interface Props {
   pages: Page[];
@@ -22,7 +22,7 @@ export const Header = (props: Props) => {
               key={page.name}
               onClick={() => {
                 if (page.route !== undefined) nav(page.route);
-                if (page.link !== undefined) lnk_open(page.link);
+                if (page.link !== undefined) open_link(page.link);
               }}
             >
               <h2 className="__header_text__">{page.name}</h2>

@@ -8,21 +8,19 @@ export const days_employed = () => {
   return diff_days.toString() + " days";
 };
 // what I know
-export const knownFormats = ["html", "json", "yaml", "css", "scss"];
 export const knownLanguages = [
   "javascript",
   "typescript",
   "python",
   "c#",
   "c++",
-  "rust (WIP)",
+  "rust",
 ];
 export const knownFrameworks = ["react", "unity"];
 
 export const whatIKnow = [
   { name: "Languages", items: knownLanguages },
   { name: "Frameworks", items: knownFrameworks },
-  { name: "Formats", items: knownFormats },
 ];
 // other info
 export const currentOS = "Windows 10";
